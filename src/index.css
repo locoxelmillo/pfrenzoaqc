@@ -70,6 +70,7 @@ code {
 .header__content {
   width: auto;
   margin: 0 auto;
+  color: #10998e;
 }
 
 .header__content h1 {
@@ -221,6 +222,8 @@ code {
 
 .video-background {
   position: absolute;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  opacity: 95%;
   top: 0;
   left: 0;
   width: 100%;
