@@ -70,15 +70,18 @@ code {
 .header__content {
   width: auto;
   margin: 0 auto;
-  color: #10998e;
+  color: #ffffff;
 }
 
 .header__content h1 {
-  font-size: 64px;
+  font-size: 48px;
+  margin: 3%;
 }
 
 .header__content p {
-  font-size: 32px;
+  font-size: 28px;
+  margin: 5%;
+
 }
 
 .header__content button {
@@ -89,6 +92,7 @@ code {
 /* -- About -- */
 
 .about h2 {
+  padding-top: 25%;
   font-size: 42px;
   margin: 25px auto;
 }
@@ -97,6 +101,7 @@ code {
   font-size: 18px;
   line-height: 130%;
   max-width: 75ch;
+  padding-bottom: 20%;
 }
 
 /* ------------------------------------------------------ */
@@ -122,7 +127,7 @@ code {
 }
 
 .projects__card {
-  max-width: 350px;
+  max-width: 325px;
 
   padding: 20px;
 
@@ -182,6 +187,7 @@ code {
 
 .social .button {
   margin: 0 15px;
+  
 }
 
 /* ------------------------------------------------------ */
@@ -197,22 +203,28 @@ code {
   display: inline-block;
 
   background: #12BDF3;
+  padding: 15px 50px ;
+  margin: auto;
 
-  padding: 15px 50px;
-
-  border: none;
+  border:none;
   border-radius: 8px;
-
+  border-width: 5px;
+ 
   font-family: "Work Sans";
   font-size: 16px;
   font-weight: 700;
   text-decoration: none;
+  
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  width: 250px; 
+  height: 60px; 
 
   cursor: pointer;
 
   transition: all 250ms ease;
 
-  margin-top: 3%;
 }
 
 .button:hover {
@@ -231,3 +243,10 @@ code {
   object-fit: cover;
   z-index: -1; /* Coloca el video detrás del contenido */
 }
+
+.contenedor {
+  display: flex;
+  flex-wrap: wrap; /* Los botones se envuelven cuando no caben en el ancho del contenedor */
+  justify-content: center;
+}
+
