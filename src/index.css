@@ -49,44 +49,61 @@ code {
 /* -- Header -- */
 
 .header {
-  padding-top: 26%;
-  padding-bottom: 21%;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
-
-  text-align: center;
+  padding-top: 290px;
+  padding-bottom: 290px;
 }
 
 .header img {
   max-width: 300px;
   height: auto;
-
-  margin: 20px auto;
-
   border-radius: 50%;
+  margin-right: 5%;
 }
 
 .header__content {
-  width: auto;
-  margin: 0 auto;
   color: #ffffff;
+  text-align: left;
+  
 }
 
 .header__content h1 {
-  font-size: 48px;
+  text-align: center;
+  font-size: 54px;
   margin: 3%;
+  text-shadow: 3px 3px 3px #000;
 }
 
 .header__content p {
-  font-size: 28px;
-  margin: 5%;
-
+  font-size: 20px;
+  margin: 3%;
+  text-shadow: 2px 2px 2px #000;
 }
 
 .header__content button {
-  margin: 25px auto 0;
+  margin: 25px 0 0;
 }
+
+/* Estilos para pantallas más pequeñas (768px o menos de ancho) */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column; /* Cambia la dirección de flex a columna para apilar elementos */
+    padding: 50px 0px 200px 0px; /* Ajusta el relleno según sea necesario */
+    
+    text-align: center; /* Alinea el contenido al centro */
+  }
+
+  .header img {
+    margin: 0;
+  }
+
+  .header__content {
+    text-align: center;
+  }
+}
+
 
 /* ------------------------------------------------------ */
 /* -- About -- */

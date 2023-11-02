@@ -8,10 +8,6 @@ const Social = () => {
             <a href="https://www.linkedin.com/in/renzoquispecastillo/?locale=en_US" className="button">LinkedIn</a>
             <a href="https://github.com/locoxelmillo/" className="button">GitHub</a>
             </div>
-            
-            
-
-
         </div>
     );
 }
